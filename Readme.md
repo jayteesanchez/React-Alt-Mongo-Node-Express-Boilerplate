@@ -1,6 +1,7 @@
 #React Full-Stack Boilerplate
 
 This is a boilerplate for a Full-Stack Javascript app that uses ES6 on the client side code.
+React is used to display the data from the Back-End RESTful API that is created here as well.
 
 ##Technologies (Explanations coming soon)
 
