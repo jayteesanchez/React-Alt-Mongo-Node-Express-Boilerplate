@@ -1,5 +1,7 @@
 #React Full-Stack Boilerplate
 
+This is a boilerplate for a Full-Stack Javascript app that uses ES6 on the client side code.
+
 ##Technologies (Explanations coming soon)
 
 1. React
@@ -21,6 +23,14 @@
 9. Browserify
 
 10. React-Router
+
+11. Jquery
+
+12. Bootstrap CSS
+
+13. HTML
+
+14. Javascript
 
 ##How to get Started..
 
