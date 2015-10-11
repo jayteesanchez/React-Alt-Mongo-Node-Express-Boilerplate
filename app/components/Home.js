@@ -12,7 +12,6 @@ class Home extends React.Component {
 
   componentDidMount() {
     HomeStore.listen(this.onChange);
-    document.getElementById('name-brand').style.opacity = 0;
   }
 
   componentWillUnmount() {
