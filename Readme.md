@@ -50,9 +50,9 @@ This is a boilerplate for a Full-Stack Javascript app that uses ES6 on the clien
 
 ##Heroku Deployment
 - This app can easily be deployed to Heroku
-- The only additional step is to create a Mongo Database for your website and inclued the URL and key in your App settings.
+- The only additional step is to create a Mongo LAB Database for your website and include the URL and key in your Heroku App settings.
 
-Credit:
+###Credit:
 
 For a very well written tutorial and major influence of this boilerplate...
 
