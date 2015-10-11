@@ -1,0 +1,11 @@
+{
+  "name": "react-alt-mongo-node-express-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Full-Stack React apps",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jaytee Sanchez",
+  "license": "MIT"
+}
