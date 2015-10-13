@@ -12,7 +12,6 @@ class Home extends React.Component {
 
   componentDidMount() {
     HomeStore.listen(this.onChange);
-    document.getElementById('home').className = 'active';
   }
 
   componentWillUnmount() {
