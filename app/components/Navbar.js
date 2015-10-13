@@ -38,6 +38,12 @@ class Navbar extends React.Component {
                   RESOURCES
                 </Link>
               </span>
+              <span> | </span>
+              <span id='website'>
+                <a href='http://www.jayteesanchez.com'>
+                  ABOUT ME
+                </a>
+              </span>
             </div>
           </div>
         </nav>
