@@ -4,9 +4,12 @@ Demo is located here:
 
 https://desolate-caverns-8551.herokuapp.com/
 
-Hello, this is my first attempt at making a Boilerplate! It's definitely a work in progress but if you see anything that needs changing please let me know!!
+Hello, this is my first attempt at making a Boilerplate!
 
-This is a boilerplate for a Full-Stack Javascript app that uses ES6 on the client side code.
+It's definitely a work in progress but if you see anything that needs changing please let me know!!
+
+This is for a Full-Stack Javascript app that uses ES6 on the client side code.
+
 React is used to display the data from the Back-End RESTful API that is created here as well.
 
 ##Technologies (Explanations coming soon)
