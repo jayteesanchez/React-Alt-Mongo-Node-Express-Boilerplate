@@ -28,6 +28,11 @@ class Home extends React.Component {
           <h1 className='text-center'>
             Home view
           </h1>
+          <h5 className='text-center'>
+            <p>This is the Landing Page!</p>
+            <p>Click the Resources Link to See interactions with the API!</p>
+            <p>Don't forget to run the seed file to see something!</p>
+          </h5>
         </div>
     )
   }
