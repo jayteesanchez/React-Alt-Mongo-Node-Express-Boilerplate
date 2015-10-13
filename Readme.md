@@ -57,7 +57,7 @@ React is used to display the data from the Back-End RESTful API that is created 
 
 - This app can easily be deployed to Heroku
 
-- The only additional step is to create a Mongo LAB Database for your website and include the URL and key in your Heroku App settings.
+- The only additional step is to create a Mongo LAB Database for your website and include the URI and key in your Heroku App settings. (Example URI in seed.js file)
 
 ##Known Issues
 
