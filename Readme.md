@@ -55,6 +55,10 @@ React is used to display the data from the Back-End RESTful API that is created 
 
 - The only additional step is to create a Mongo LAB Database for your website and include the URL and key in your Heroku App settings.
 
+##Known Issues
+
+- Resource state rendering is incorrectly adding the API data to the State.
+
 ###Credit:
 
 For a very well written tutorial and major influence of this boilerplate...
