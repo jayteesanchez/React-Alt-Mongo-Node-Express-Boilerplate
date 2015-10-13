@@ -1,7 +1,10 @@
 var mongoose = require('mongoose');
 var config = require('./config');
 
-mongoose.connect('mongodb://admin:1234@ds051913.mongolab.com:51913/heroku_8kw8qt76');
+mongoose.connect(config.database);
+
+// Example for how to connect seed file to Mongo Labs DB, the URI below is === MongoLab Key in Heroku app Settings.
+// mongoose.connect('mongodb://admin:1234@ds051913.mongolab.com:51913/heroku_8kw8qt76');
 
 var Resource = require('./models/Resource');
 
