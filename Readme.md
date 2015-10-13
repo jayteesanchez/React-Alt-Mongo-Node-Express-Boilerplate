@@ -25,7 +25,7 @@ React is used to display the data from the Back-End RESTful API that is created 
 
 10. React-Router
 
-11. Jquery
+11. JQuery
 
 12. Bootstrap CSS
 
@@ -45,9 +45,6 @@ React is used to display the data from the Back-End RESTful API that is created 
     - gulp
     - mongod
     - npm start
-
-   Prod Commands
-    - npm postinstall
 
 ##Heroku Deployment
 - This app can easily be deployed to Heroku

@@ -1,22 +1,21 @@
 import React from 'react';
 import {Link} from 'react-router';
-import HomeStore from '../stores/HomeStore'
-import HomeActions from '../actions/HomeActions';
+import ResourcesStore from '../stores/ResourcesStore'
+import ResourcesActions from '../actions/ResourcesActions';
 
-class Home extends React.Component {
+class Resources extends React.Component {
   constructor(props) {
     super(props);
-    this.state = HomeStore.getState();
+    this.state = ResourcesStore.getState();
     this.onChange = this.onChange.bind(this);
   }
 
   componentDidMount() {
-    HomeStore.listen(this.onChange);
-    document.getElementById('home').className = 'active';
+    ResourcesStore.listen(this.onChange);
   }
 
   componentWillUnmount() {
-    HomeStore.unlisten(this.onChange);
+    ResourcesStore.unlisten(this.onChange);
   }
 
   onChange(state) {
@@ -27,11 +26,11 @@ class Home extends React.Component {
     return (
         <div className='container'>
           <h1 className='text-center'>
-            Home view
+            Resources view
           </h1>
         </div>
     )
   }
 }
 
-export default Home;
+export default Resources;
