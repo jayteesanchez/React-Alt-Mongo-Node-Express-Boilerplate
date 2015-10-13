@@ -42,8 +42,8 @@ function updateResource(request, response) {
   Resource.findById({_id: id}, function(error, resource) {
     if(error) response.json({message: 'Could not find resource b/c:' + error});
 
-    if(request.body.resource_img)            resource_img        = request.body.resource_img;
-    if(request.body.resource_name)           resource_name       = request.body.resource_name;
+    if(request.body.name)    name    = request.body.name;
+    if(request.body.img_url) img_url = request.body.img_url;
 
 
     resource.save(function(error) {
@@ -65,7 +65,7 @@ function removeResource(request, response) {
 }
 
 module.exports = {
-  getAll: getAll,
+  getAll:          getAll,
   createResource: createResource,
   getOneResource: getOneResource,
   updateResource: updateResource,
