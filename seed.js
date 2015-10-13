@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var config = require('./config');
 
-mongoose.connect(config.database);
+mongoose.connect('mongodb://admin:1234@ds051913.mongolab.com:51913/heroku_8kw8qt76');
 
 var Resource = require('./models/Resource');
 
