@@ -25,10 +25,6 @@ var newResources = [
   img_url: 'http://www.sandiego.com/sites/sandiego.com/files/styles/large/public/content/featured-content/sd-tour-1.jpg?itok=8KDQcQ5u'
   },
   {
-  name: 'Las Vegas',
-  img_url: 'http://allworldtowns.com/data_images/countries/las-vegas/las-vegas-09.jpg'
-  },
-  {
   name: 'Blue Shirt',
   img_url: 'http://matchem.com/wp-content/uploads/2015/03/plain-blue-shirt-front-and-back-72hi3bcb.jpg'
   },
@@ -58,7 +54,7 @@ var newResources = [
   },
   {
   name: 'ReactJS',
-  img_url: 'http://allworldtowns.com/data_images/countries/las-vegas/las-vegas-09.jpg'
+  img_url: 'http://moduscreate.com/wp-content/uploads/2014/03/react-opti.png'
   },
   {
   name: 'Ruby on Rails',

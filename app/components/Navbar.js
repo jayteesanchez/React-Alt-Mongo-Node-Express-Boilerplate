@@ -29,7 +29,7 @@ class Navbar extends React.Component {
             <div>
               <span className='navbar-left' id='home'>
                 <Link to='/'>
-                  HOME
+                  HOME&nbsp;
                 </Link>
               </span>
               <span> | </span>

@@ -17,12 +17,10 @@ class ResourcesStore {
   }
 
   onGetResourcesSuccess(data) {
-    console.log(data);
     this.resources = data;
   }
 
   onGetResourcesFail(errorMessage) {
-    console.log(errorMessage);
     this.resourceValidationState = 'Error getting Resources';
   }
 }

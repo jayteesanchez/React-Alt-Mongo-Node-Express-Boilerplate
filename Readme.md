@@ -1,5 +1,7 @@
 #React Full-Stack Boilerplate
 
+Hello, this is my first attempt at making a Boilerplate! It's definitely a work in progress but if you see anything that needs changing please let me know!!
+
 This is a boilerplate for a Full-Stack Javascript app that uses ES6 on the client side code.
 React is used to display the data from the Back-End RESTful API that is created here as well.
 
@@ -42,12 +44,15 @@ React is used to display the data from the Back-End RESTful API that is created 
 3. bower install
 
 4. Dev Commands
-    - gulp
     - mongod
+    - gulp
+    - node seed.js
     - npm start
 
 ##Heroku Deployment
+
 - This app can easily be deployed to Heroku
+
 - The only additional step is to create a Mongo LAB Database for your website and include the URL and key in your Heroku App settings.
 
 ###Credit:

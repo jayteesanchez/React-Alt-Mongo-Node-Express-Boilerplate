@@ -25,24 +25,36 @@ class Resources extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    var n = this.state.name.trim();
-    var i = this.state.img_url;
-    AddResourceActions.addResource(n, i);
+    var n = document.getElementById('nameTextField').value;
+    var i = document.getElementById('img_urlTextField').value;
+
+    if (n && i){
+      ResourcesActions.addResource(n, i);
+      ResourcesActions.getResources();
+    }
   }
 
 
   render() {
-    var allResources = this.state.resources.map((resource) => {
+    var imgResize ={
+      width: '100%',
+      height: '100%'
+    }
+
+    var allResources = this.state.resources;
+    if (allResources) {
+      var resourceDisplay = allResources.resource.reverse().map((resource) => {
         return (
             <div key={resource._id} className='panel panel-default'>
               <div className='panel-heading'>{resource.name}</div>
               <div className='panel-body'>
-                <img src={resource.img_url}/>
+                <img style={imgResize} src={resource.img_url}/>
               </div>
             </div>
           );
           }
         );
+      }
     return (
       <div className='container'>
 
@@ -54,11 +66,11 @@ class Resources extends React.Component {
                 <form onSubmit={this.handleSubmit.bind(this)}>
                   <div className={'form-group ' + this.state.resourceValidationState}>
                     <label className='control-label'>Caption</label>
-                    <input type='text' className='form-control' ref='nameTextField' value={this.state.name} />
+                    <input type='text' className='form-control' id='nameTextField' value={this.state.name} />
                   </div>
                   <div className='form-group'>
                     <label className='control-label'>Image URL</label>
-                    <input type='text' className='form-control' ref='img_urlTextField' value={this.state.img_url} />
+                    <input type='text' className='form-control' id='img_urlTextField' value={this.state.img_url} />
                   </div>
                   <button type='submit' className='btn btn-success flipInX animated'>Submit</button>
                 </form>
@@ -68,8 +80,9 @@ class Resources extends React.Component {
         </div>
 
         <div className='row'>
+          <h3 className='text-center'>All Your Resources!</h3>
           <div className='col-sm-8 col-sm-offset-2'>
-            {allResources}
+            {resourceDisplay}
           </div>
         </div>
 
