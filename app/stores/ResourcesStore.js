@@ -17,7 +17,7 @@ class ResourcesStore {
   }
 
   onGetResourcesSuccess(data) {
-    this.resources = data;
+    this.resources = data.resource;
   }
 
   onGetResourcesFail(errorMessage) {
