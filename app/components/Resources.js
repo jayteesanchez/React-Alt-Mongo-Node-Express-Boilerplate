@@ -43,7 +43,7 @@ class Resources extends React.Component {
 
     var allResources = this.state.resources;
     if (allResources) {
-      var resourceDisplay = allResources.resource.reverse().map((resource) => {
+      var resourceDisplay = allResources.reverse().map((resource) => {
         return (
             <div key={resource._id} className='panel panel-default'>
               <div className='panel-heading'>{resource.name}</div>
